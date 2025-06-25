@@ -25,6 +25,6 @@ stopwatch-app/
 └── script.js        # JavaScript logic
 ```
 ## How to Run
-[[https://github.com/231FA04347/Web-Stopwatch-App.git](https://github.com/231FA04347/Simple-Stopwatch)](https://smart-timer-app.netlify.app/)
+https://smart-timer-app.netlify.app/
 ## Author
 Vajinepalli Bharath Chandra
