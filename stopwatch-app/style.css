@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
   text-align: center;
@@ -8,8 +8,6 @@ body {
   padding: 0;
   min-height: 100vh;
 }
-
-/* Container Styles */
 .stopwatch {
   margin: 60px auto;
   padding: 28px 24px 24px 24px;
@@ -20,7 +18,6 @@ body {
   border: 1.5px solid #44485a;
 }
 
-/* Time Display */
 #time-display {
   font-size: 3rem;
   font-weight: bold;
@@ -34,7 +31,6 @@ body {
   border: 1.2px solid #44485a;
 }
 
-/* Buttons */
 .buttons {
   margin-bottom: 10px;
 }
@@ -70,7 +66,6 @@ body {
   cursor: not-allowed;
 }
 
-/* Lap Times */
 #lap-times {
   margin-top: 26px;
   list-style-type: decimal-leading-zero;
