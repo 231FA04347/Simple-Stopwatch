@@ -3,7 +3,6 @@ let elapsedTime = 0;
 let timerInterval = null;
 let laps = [];
 
-// DOM Elements
 const timeDisplay = document.getElementById("time-display");
 const startBtn = document.getElementById("start-btn");
 const pauseBtn = document.getElementById("pause-btn");
@@ -11,9 +10,8 @@ const resetBtn = document.getElementById("reset-btn");
 const lapBtn = document.getElementById("lap-btn");
 const lapTimes = document.getElementById("lap-times");
 
-// Format time as HH:MM:SS.MS (microseconds)
 function formatTime(ms) {
-  const microseconds = Math.floor(ms % 1000); // Microseconds
+  const microseconds = Math.floor(ms % 1000); 
   const seconds = Math.floor(ms / 1000) % 60;
   const minutes = Math.floor(ms / (1000 * 60)) % 60;
   const hours = Math.floor(ms / (1000 * 60 * 60));
@@ -24,7 +22,7 @@ function formatTime(ms) {
     ":" +
     String(seconds).padStart(2, "0") +
     "." +
-    String(microseconds).padStart(3, "0") // Display microseconds with 3 digits
+    String(microseconds).padStart(3, "0") 
   );
 }
 
@@ -33,7 +31,7 @@ function startTimer() {
   timerInterval = setInterval(() => {
     elapsedTime = Date.now() - startTime;
     timeDisplay.textContent = formatTime(elapsedTime);
-  }, 10); // Update every 10ms for microsecond precision
+  }, 10); 
 }
 
 function pauseTimer() {
@@ -55,7 +53,6 @@ function recordLap() {
   lapTimes.appendChild(lapItem);
 }
 
-// Event Listeners
 startBtn.addEventListener("click", startTimer);
 pauseBtn.addEventListener("click", pauseTimer);
 resetBtn.addEventListener("click", resetTimer);
